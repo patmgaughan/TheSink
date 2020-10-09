@@ -1,4 +1,42 @@
 body {
-	background: #e3e;
-	color: #fff;
+	background: #222;
+	color: #509ec4;
 }
+
+header {
+	margin: 0px;
+	padding: 20px;
+	background-color: #76e5bd;
+}
+
+ul {
+	display: inline;
+}
+
+h1 {
+	font-size: 230%;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+li {
+	padding: 5px;
+	margin-left: 5px;
+	display: inline;
+	background-color: #dd9de5;
+	color: #509ec4;
+}
+
+li a {
+	text-decoration: none;
+	color: #76e5bd;
+}
+
+/*
+dark pink #e45ae8
+light pink #dd9de5
+cyan #509ec4
+turoquoise #76e5bd
+orange #eda23e
+*/
