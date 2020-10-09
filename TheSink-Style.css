@@ -1,16 +1,19 @@
 body {
 	background: #222;
 	color: #509ec4;
+	padding: 0px;
+	margin: 0px;
 }
 
 header {
 	margin: 0px;
-	padding: 20px;
+	padding: 12px;
 	background-color: #76e5bd;
+	border: 2px solid #ff0;
 }
 
 ul {
-	display: inline;
+	text-align: center;
 }
 
 h1 {
@@ -18,19 +21,23 @@ h1 {
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 2px 2px #ff0;
+	text-shadow: 3px 3px #dd9de5;
 }
 
 li {
-	padding: 5px;
+	padding: 9px;
 	margin-left: 5px;
-	display: inline;
-	background-color: #dd9de5;
-	color: #509ec4;
+	display: inline-block;
+	background-color: #e45ae8;
+	text-transform: uppercase;
+	border: 2px solid #76e5bd;
+	margin-bottom: 5px;
 }
 
 li a {
 	text-decoration: none;
-	color: #76e5bd; 
+	color: #ff0;
 }
 
 /*
