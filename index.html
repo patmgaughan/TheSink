@@ -2,25 +2,95 @@
 <head>
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+		li {
+			/*padding: 9px;*/
+			margin-left: 5px;
+			display: block;
+			background-color: #e45ae8;
+			text-transform: uppercase;
+			border: 2px solid #76e5bd;
+			margin-bottom: 5px;
+		}
+		body {
+			background-color: #222;
+		}
+		.side {
+			background-color: #76e5bd;
+		}
+		.footer {
+			background-color: #76e5bd;
+		}
+		header {
+			background-color: #76e5bd;
+		}
+		.content {
+			display: flex;
+			margin: 0;
+		}
+		.middle {
+			width: 50%;
+			margin: 100px auto;
+			position: relative;
+			color: #eee;
+		}
+
+		.list {
+			width: 25%;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.list ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+	</style>
 </head>
 <body>
-	<header>
-		The Sink
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="TheSink-Menu.html">Menu</a></li>
-			<li><a href="TheSink-Hours.html">Hours/Location</a></li>
-			<li><a href="TheSink-MeetTheTeam.html">Meet the Team</a></li>
-			<li><a href="TheSink-History.html">Our story / history</a></li>
-			<li><a href="TheSink-Drink.html">Drink Suggestions</a></li>
-			<li><a href="TheSink-Merch.html">Merch</a></li>
-			<li><a href="TheSink-Apply.html">Apply</a></li>
+	<header></header>
 
-		</ul>
-	</nav>
+	<section class="section">
+		<div class="side">
+		</div>
+		<div class="content">
+			<!-- Conter Here!!! -->
 
-	<h1>Home</h1>
+			<div class="list">
+				<ul>
+					<li><a href="TheSink-Menu.html">Menu</a></li>
+					<li><a href="TheSink-Apply.html">Order</a></li>
+					<li><a href="TheSink-Hours.html">Hours/Location</a></li>
+				</ul>
+			</div>
+
+			<div class="middle">
+				<img src="sinkLogo.png" alt="The Sink" width="500">
+			</div>
+
+			<div class="list">
+				<ul>
+					<li><a href="TheSink-MeetTheTeam.html">Meet the Team</a></li>
+					<li><a href="TheSink-History.html">history</a></li>
+					<li><a href="TheSink-Drink.html">Drink Suggestions</a></li>
+
+				</ul>
+			</div>
+
+
+			<!-- Content Here!!! -->
+		</div>
+		<div class="side">
+		</div>
+	</section>
+
+	<div class="footer">
+		The Sink Coffee Shop Tufts University
+	</div>
 
 </body>
