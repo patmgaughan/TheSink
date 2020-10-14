@@ -2,15 +2,42 @@
 <head>
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+		.button-menu {
+			display: flex;
+			margin: 0 auto;
+			width: 75%;
+			justify-content: space-between;
+		}
+
+		.button-menu input {
+			border: 2px solid #76e5bd;
+			background-color: #dd9de5;
+			padding: 8px 0;	
+			width: 22.5%;
+			font-size: 1em;
+			cursor: pointer;
+			font-style: oblique;
+		}
+
+		.button-menu input:hover {
+			background-color: #76e5bd;
+		}
+			
+		.content-container {
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 10px;	
+		}
+
+	</style>
 </head>
 <body>
 	<header>
 	</header>
-
 	<div class="logo">
 			<a href="index.html"><img src="sinkLogo.PNG" alt="The Sink" width="200"></a>
 	</div>
-
 	<section class="section">
 		<div class="side">
 		</div>
@@ -27,10 +54,27 @@
 				</ul>
 			</nav>
 			<h1>Menu</h1>
-			<!-- Conter Here!!! -->
-
-
-
+			<!-- Content Here!!! -->
+			<div class="button-menu">
+				<input id="coffee-btn" type="button" value="Coffee">
+				<input id="specials-btn" type="button" value="Sink Specials">
+				<input id="tea-btn" type="button" value="Tea">
+				<input id="food-btn" type="button" value="Food">
+			</div>
+			<div class="content-container">
+				<div class="coffee-menu" style="display: none;">
+					<p>Coffee</p>
+				</div>
+				<div class="tea-menu" style="display: none;">
+					<p>Tea</p>
+				</div>
+				<div class="specials-menu" style="display: none;">
+					<p>Specials</p>
+				</div>
+				<div class="food-menu" style="display: none;">
+					<p>Food</p>
+				</div>
+			</div>
 			<!-- Content Here!!! -->
 		</div>
 		<div class="side">
@@ -40,5 +84,31 @@
 	<div class="footer">
 		The Sink Coffee Shop at Tufts University
 	</div>
+	<script type="text/javascript">
+		var coffeeBtn = document.getElementById("coffee-btn");
+		var teaBtn = document.getElementById("tea-btn")
+		var specialsBtn = document.getElementById("specials-btn");
+		var foodBtn = document.getElementById("food-btn");
+
+		var coffeeMenu = document.getElementsByClassName("coffee-menu")[0];
+		var teaMenu = document.getElementsByClassName("tea-menu")[0];
+		var specialsMenu = document.getElementsByClassName("specials-menu")[0];
+		
+		coffeeBtn.addEventListener("click", function() {
+			coffeeMenu.style.display = "block";
+			teaMenu.style.display = "none";
+			specialsMenu.style.display = "none";
+		})
+		teaBtn.addEventListener("click", function() {
+			coffeeMenu.style.display = "none";
+			teaMenu.style.display = "block";
+			specialsMenu.style.display = "none";
+		})
+		specialsBtn.addEventListener("click", function() {
+			coffeeMenu.style.display = "none";
+			teaMenu.style.display = "none";
+			specialsMenu.style.display = "block";
+		})
+	</script>
 	
 </body>

@@ -3,15 +3,55 @@
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
 	<style>
-		li {
+
+		.list {
+			width: 25%;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.list ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		li {;
 			/*padding: 9px;*/
 			margin-left: 5px;
 			display: block;
 			background-color: #e45ae8;
 			text-transform: uppercase;
 			border: 2px solid #76e5bd;
-			margin-bottom: 5px;
+			margin-bottom: 7px;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
 		}
+
+		.list-left {
+			width: 30%;
+			margin: 0 3%;
+		}
+
+		.list-left li:hover {
+			transform: scale(1.03);
+			box-shadow: 3px 5px;	
+		}
+
+		.list-right {
+			width: 30%;
+			padding: 0 3%;
+			margin-right: 5px;
+		}
+
+		.list-right li:hover {
+			transform: scale(1.03);
+			box-shadow: -3px 5px;
+		}
+
 		body {
 			background-color: #222;
 		}
@@ -29,26 +69,14 @@
 			margin: 0;
 		}
 		.middle {
-			width: 50%;
+			width: 40%;
 			margin: 100px auto;
 			position: relative;
 			color: #eee;
-		}
-
-		.list {
-			width: 25%;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.list ul {
-			margin: 0;
-			padding: 0;
 			text-align: center;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
 		}
+
+		
 
 	</style>
 </head>
@@ -61,7 +89,7 @@
 		<div class="content">
 			<!-- Conter Here!!! -->
 
-			<div class="list">
+			<div class="list-left list">
 				<ul>
 					<li><a href="TheSink-Menu.html">Menu</a></li>
 					<li><a href="TheSink-Apply.html">Order</a></li>
@@ -73,7 +101,7 @@
 				<img src="sinkLogo.PNG" alt="The Sink" width="500">
 			</div>
 
-			<div class="list">
+			<div class="list-right list">
 				<ul>
 					<li><a href="TheSink-MeetTheTeam.html">Meet the Team</a></li>
 					<li><a href="TheSink-History.html">history</a></li>
