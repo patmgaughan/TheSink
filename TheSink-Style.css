@@ -13,7 +13,8 @@ header {
 }
 
 aside {
-	background-color: #eda23e; 
+	border: 2px solid #509ec4;
+	background-color: #eda23e;
 	color: #222;
 	margin: 15px;
 	padding: 5px;
@@ -104,7 +105,7 @@ a{
 
 /* Menu Page */
 .button-menu {
-	border: 2px solid red;
+	border: 2px solid #ff0;
 	margin: 0 auto;
 	width: 70%;
 }
@@ -115,4 +116,5 @@ light pink #dd9de5
 cyan #509ec4
 turoquoise #76e5bd
 orange #eda23e
+yellow #ff0
 */
