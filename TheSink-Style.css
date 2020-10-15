@@ -13,11 +13,12 @@ header {
 }
 
 aside {
-	border: 2px solid #509ec4;
-	background-color: #eda23e;
+	background-color: #ff0;
 	color: #222;
-	margin: 15px;
+	margin: 40px;
 	padding: 5px;
+	box-shadow: -8px 8px #e45ae8;
+	font-size: 150%;
 }
 
 img {
