@@ -2,13 +2,41 @@
 <head>
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+		.col {
+     		margin-top: 5%;
+     		display: grid;
+     		justify-content: right;
+     		grid-gap: 40px 10px;  
+     		grid-template-columns: repeat(auto-fit, 300px);
+     		grid-template-rows: repeat(4, 300px);
+     	}
+
+     	.footer {
+     		z-index: 1;
+     	}
+
+     	.logo {
+     		z-index: 1;
+     	}
+
+		img.profpic {
+			opacity: 1;
+			box-shadow: -8px 8px #eda23e;
+		}
+
+		img.profpic:hover {
+			opacity: .7;
+			z-index: 0;
+		}
+	</style>
 </head>
 <body>
 	<header>
 	</header>
 
 	<div class="logo">
-			<a href="index.html"><img src="sinkLogo.PNG" alt="The Sink" width="200"></a>
+			<a href="index.html"><img src="sinkLogo.png" alt="The Sink" width="200"></a>
 	</div>
 
 	<section class="section">
@@ -28,6 +56,19 @@
 			</nav>
 			<h1>Sinksters</h1>
 			<!-- Conter Here!!! -->
+
+			<div class="col">
+					<img class="profpic" src="s1.png" alt="Sinkster">
+					<img class="profpic" src="s2.png" alt="Sinkster">
+					<img class="profpic" src="s3.png" alt="Sinkster">
+					<img class="profpic" src="s4.png" alt="Sinkster">
+					<img class="profpic" src="s5.png" alt="Sinkster">
+					<img class="profpic" src="s6.png" alt="Sinkster">
+					<img class="profpic" src="s7.png" alt="Sinkster">
+					<img class="profpic" src="s8.png" alt="Sinkster">
+					<img class="profpic" src="s9.png" alt="Sinkster">
+					<img class="profpic" src="s10.png" alt="Sinkster">
+			</div>
 
 
 
