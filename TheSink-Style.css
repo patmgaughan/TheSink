@@ -59,11 +59,11 @@ div.logo {
 
 h1 {
 	font-size: 230%;
+	color: #fff;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 2px 2px #ff0;
-	text-shadow: 3px 3px #dd9de5;
+	text-shadow: 3px 3px #509ec4;
 }
 
 li {
