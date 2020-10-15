@@ -6,10 +6,10 @@
 		.col {
      		margin-top: 5%;
      		display: grid;
-     		justify-content: right;
-     		grid-gap: 40px 10px;  
-     		grid-template-columns: repeat(auto-fit, 300px);
-     		grid-template-rows: repeat(4, 300px);
+     		justify-content: center;
+     		grid-gap: 40px 80px;  
+     		grid-template-columns: repeat(auto-fit, 220px);
+     		grid-template-rows: repeat(4, 294px);
      	}
 
      	.footer {
@@ -29,6 +29,27 @@
 			opacity: .7;
 			z-index: 0;
 		}
+
+		.box{
+			opacity: 1;
+			box-shadow: -8px 8px #eda23e;
+		}
+
+		.text{
+    		opacity: 0;
+    		margin: 0;
+			padding: 0;
+			text-align: center;
+			position: relative;
+			top: 80%;
+			color: #fff;
+			font-size: 200%;
+			background-color: #76e5bd;
+			transform: translateY(-20%);
+		}
+		.box:hover .text{
+    		opacity: 1;
+		}
 	</style>
 </head>
 <body>
@@ -36,8 +57,8 @@
 	</header>
 
 	<div class="logo">
-			<a href="index.html"><img src="sinkLogo.PNG" alt="The Sink" width="200"></a>
-	</div> 
+			<a href="index.html"><img src="sinkLogo.png" alt="The Sink" width="200"></a>
+	</div>
 
 	<section class="section">
 		<div class="side">
@@ -58,16 +79,37 @@
 			<!-- Conter Here!!! -->
 
 			<div class="col">
-					<img class="profpic" src="s1.png" alt="Sinkster">
-					<img class="profpic" src="s2.png" alt="Sinkster">
-					<img class="profpic" src="s3.png" alt="Sinkster">
-					<img class="profpic" src="s4.png" alt="Sinkster">
-					<img class="profpic" src="s5.png" alt="Sinkster">
-					<img class="profpic" src="s6.png" alt="Sinkster">
-					<img class="profpic" src="s7.png" alt="Sinkster">
-					<img class="profpic" src="s8.png" alt="Sinkster">
-					<img class="profpic" src="s9.png" alt="Sinkster">
-					<img class="profpic" src="s10.png" alt="Sinkster">
+					<div class="box" style="background-image: url(s1.png);">
+						<div class="text">T.J.</div>
+					</div>
+					<div class="box" style="background-image: url(s2.png);">
+						<div class="text">Ashley</div>
+					</div>
+					<div class="box" style="background-image: url(s3.png);">
+						<div class="text">Vince</div>
+					</div>
+					<div class="box" style="background-image: url(s4.png);">
+						<div class="text">Gus</div>
+					</div>
+					<div class="box" style="background-image: url(s5.png);">
+						<div class="text">Mikey</div>
+					</div>
+					<div class="box" style="background-image: url(s6.png);">
+						<div class="text">Gretchen</div>
+					</div>
+					<div class="box" style="background-image: url(s7.png);">
+						<div class="text">Randall</div>
+					</div>
+					<div class="box" style="background-image: url(s8.png);">
+						<div class="text">Lawson</div>
+					</div>
+					<div class="box" style="background-image: url(s9.png);">
+						<div class="text">The Ashleys</div>
+					</div>
+					<div class="box" style="background-image: url(s10.png);">
+						<div class="text">Ms Grotke</div>
+					</div>
+
 			</div>
 
 
@@ -83,3 +125,4 @@
 	</div>
 	
 </body>
+
