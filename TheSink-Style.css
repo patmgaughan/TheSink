@@ -12,10 +12,12 @@ header {
 }
 
 aside {
-	background-color: #dd9de5;
+	background-color: #ff0;
 	color: #222;
-	margin: 15px;
+	margin: 40px;
 	padding: 5px;
+	box-shadow: -8px 8px #e45ae8;
+	font-size: 150%;
 }
 
 img {
@@ -56,11 +58,11 @@ div.logo {
 
 h1 {
 	font-size: 230%;
+	color: #fff;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 2px 2px #ff0;
-	text-shadow: 3px 3px #dd9de5;
+	text-shadow: 3px 3px #509ec4;
 }
 
 li {
