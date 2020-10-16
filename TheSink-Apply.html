@@ -2,6 +2,25 @@
 <head>
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+		.form-content {
+			border: 2px solid #76e5bd;
+			background-color:#dd9de5;
+			width: 70%;
+			margin: 0 auto;
+			color: #ffff00;
+			line-height: 25px;
+		}
+		.order-form {
+			border: 2px solid #76e5bd;
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		input, select {
+			margin-bottom: 15px;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -23,14 +42,47 @@
 					<li><a href="TheSink-MeetTheTeam.html">Meet the Team</a></li>
 					<li><a href="TheSink-History.html">history</a></li>
 					<li><a href="TheSink-Drink.html">Drink Suggestions</a></li>
-
 				</ul>
 			</nav>
 			<h1>Order</h1>
 			<!-- Conter Here!!! -->
-
-
-
+			<div class="form-content">
+				<form class="order-form">
+					<label for="name">Name: </label>
+					<input id="name"><br>
+					<label for="drink">What drink would you like?</label>
+					<input for="drink" type="textbox"><br>
+					<label for="milk-types">What type of milk do you want? </label>
+					<select id="milk-types" name="milk-types">
+						<option value="whole">Whole</option>
+						<option value="skim">Skim</option>
+						<option value="almond">Almond</option>
+						<option value="oat">Oat</option>
+						<option value="soy">Soy</option>
+						<option value="no-milk">None</option>
+					</select><br>
+					<label for="pickup-time">Choose a time for pickup:</label>
+					<select id="pickup-time" name="pickup-time" required>
+						<option value="11to12">11am to 12pm</option>
+						<option value="12to2">12pm to 2pm</option>
+						<option value="2to4">2pm to 4pm</option>
+						<option value="4to6">4pm to 6pm</option>
+						<option value="6to8">6pm to 8pm</option>
+						<option value="8to9">8pm to 9pm</option>
+					</select><br>
+					<label for="submit"></label>
+					<input type="submit" id="submit" name="submit">
+	
+					<!-- Name?
+					What Drink? (text)
+					Milk Specifications? (radio buttons)
+					Food?
+					Pick-up Window?
+					Allergies?
+					Submit -->
+				</form>
+			</div>
+	
 			<!-- Content Here!!! -->
 		</div>
 		<div class="side">

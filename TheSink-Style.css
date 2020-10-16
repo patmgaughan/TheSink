@@ -9,16 +9,13 @@ header {
 	margin: 0px;
 	padding: 20px;
 	background-color: #76e5bd;
-	/*border: 2px solid #ff0;*/
 }
 
 aside {
-	background-color: #ff0;
+	background-color: #dd9de5;
 	color: #222;
-	margin: 40px;
+	margin: 15px;
 	padding: 5px;
-	box-shadow: -8px 8px #e45ae8;
-	font-size: 150%;
 }
 
 img {
@@ -59,11 +56,11 @@ div.logo {
 
 h1 {
 	font-size: 230%;
-	color: #fff; 
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 3px 3px #509ec4;
+	text-shadow: 2px 2px #ff0;
+	text-shadow: 3px 3px #dd9de5;
 }
 
 li {
@@ -103,19 +100,10 @@ a{
 	background-color: #76e5bd;
 }
 
-
-/* Menu Page */
-.button-menu {
-	border: 2px solid #ff0;
-	margin: 0 auto;
-	width: 70%;
-}
-
 /*
 dark pink #e45ae8
 light pink #dd9de5
 cyan #509ec4
 turoquoise #76e5bd
 orange #eda23e
-yellow #ff0
 */
