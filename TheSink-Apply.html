@@ -8,6 +8,9 @@
 				font-size: 17px;
 				text-align: center;
 				color: #76e5bd;
+				width: 70%;
+				margin: 0 auto;
+				margin-bottom: 15px;
 			}
 
 			.form-content {
@@ -61,13 +64,13 @@
 					</ul>
 				</nav>
 				<h1>Order</h1>
-				<p class="order-description">Yes, we do online orders now - simply <u><a href="TheSink-Menu.html" target="_blank">pick your drink</a></u> and tell us when you wanna pick it up!<br>Payment can be done in person or through Venmo.</p>
+				<p class="order-description">Yes, we do online orders now - simply <u><a href="TheSink-Menu.html" target="_blank">choose your drink</a></u> and tell us when you wanna pick it up!<br>Payment can be done in person or through Venmo.</p>
 				<div class="form-content">
-					<form class="order-form">
+					<form class="order-form" name="order" onsubmit="return validate()">
 						<label for="name">Name: </label>
-						<input id="name" required><br>
+						<input id="name" name="name"><br>
 						<label for="drink">What drink would you like?</label>
-						<input for="drink" type="textbox" required><br>
+						<input for="drink" name="drink" type="textbox"><br>
 						<label for="milk-types">What type of milk do you want? </label>
 						<select id="milk-types" name="milk-types">
 							<option value="whole">Whole</option>
@@ -97,5 +100,20 @@
 		<div class="footer">
 			The Sink Coffee Shop at Tufts University
 		</div>
+		<script type="text/javascript">
+			function validate() {
+				if (document.order.name.value == "") {
+					alert("You need to fill in your name");
+					return false;
+				}
+
+				if (document.order.drink.value == "") {
+					alert("Please tell us what drink you'd like!");
+					return false;
+				}
+				alert("Your order has been submitted. Thanks for ordering with us!");
+				return true;
+			}
+		</script>
 	</body>
 </html>
