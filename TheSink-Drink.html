@@ -2,6 +2,20 @@
 <head>
 	<title>The Sink</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+	    .form-content {
+		border: 2px solid #76e5bd;
+		background-color: #dd9de5;
+		width: 70%;
+		margin: 0 auto:
+		line-height: 25px;
+	    } 
+	    .drink-form {
+		border: 2px solid #76e5bd;
+		text-align: center;
+		padding-top: 10px;
+	    }
+
 </head>
 <body>
 	<header>
@@ -27,11 +41,29 @@
 				</ul>
 			</nav>
 			<h1>Drink Suggestions</h1>
-			<!-- Conter Here!!! -->
+			<div class="form-content">
+				<form class="drink-form">
+					<label for="title">Title: </label>
+					<input id="title"><br>
+			
+					<label for="drink">What is the recipe?</label>
+					<input for="drink" type="textbox"><br>
+					
+					<label for="why">Why should we add this drink to our repertoire?</label>
+					<input for="why" type="textbox"><br>
+		
+					<label for="temp">What temperature do you recommend? </label>
+					<select id="temp" name="temp">
+						<option value="either">Either</option>
+						<option value="hot">Hot</option>
+						<option value="iced">Iced</option>
+					</select><br>
+			
+					<label for="submit"></label>
+					<input type="submit" id="submit" name="submit">
 
-
-
-			<!-- Content Here!!! -->
+				</form>
+			</div>				
 		</div>
 		<div class="side">
 		</div>
