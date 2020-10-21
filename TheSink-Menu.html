@@ -6,10 +6,9 @@
 		.button-menu {
 			display: flex;
 			margin: 0 auto;
-			width: 75%;
+			width: 65%;
 			justify-content: space-between;
 		}
-
 		.button-menu input {
 			border: 2px solid #76e5bd;
 			background-color: #dd9de5;
@@ -18,17 +17,40 @@
 			font-size: 1em;
 			cursor: pointer;
 		}
-
 		.button-menu input:hover {
 			background-color: #76e5bd;
 		}
-			
+		.button-menu input:focus {
+			border-style: none;
+		}
 		.content-container {
 			width: 80%;
 			margin: 0 auto;
 			margin-top: 10px;	
 		}
-
+		.menu-listing {
+			width: 82.5%;
+			margin: 0 auto;
+			margin-top: 20px;
+			border: 2px solid #dd9de5;
+			font-size: 18px;
+		}
+		.menu-listing:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.menu-col {
+			float: left;
+			width: 50%;
+			font-size: 18px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.items {
+			text-align: left;
+			padding-left: 10%;
+		}
 	</style>
 </head>
 <body>
@@ -59,20 +81,71 @@
 				<input id="coffee-btn" type="button" value="Coffee">
 				<input id="specials-btn" type="button" value="Sink Specials">
 				<input id="tea-btn" type="button" value="Tea">
-				<input id="food-btn" type="button" value="Food">
 			</div>
 			<div class="content-container">
 				<div class="coffee-menu" style="display: none;">
-					<p>Coffee</p>
-				</div>
-				<div class="tea-menu" style="display: none;">
-					<p>Tea</p>
+					<div class="menu-listing">
+						<div class="menu-col items">
+							<p>Drip Coffee</p>
+							<p>Cold Brew</p>
+							<p>Cappucino</p>
+							<p>Latte</p>
+							<p>Mocha</p>
+							<p>Americano</p>
+						</div>
+						<div class="menu-col">
+							<p>$2.00</p>
+							<p>$3.00</p>
+							<p>$3.50</p>
+							<p>$3.75</p>
+							<p>$3.75</p>
+							<p>$2.50</p>
+						</div>
+						
+					</div>
 				</div>
 				<div class="specials-menu" style="display: none;">
-					<p>Specials</p>
+					<div class="menu-listing">
+						<div class="menu-col items">
+							<p>Hot Karl</p>
+							<p>Cinny Vanilly</p>
+							<p>Volermort</p>
+							<p>Lucy in the Chai</p>
+							<p>Cloud Nine</p>
+							<p>Soylent Green</p>
+							<p>Beesting</p>
+							<p>Medford Fog</p>
+						</div>
+						<div class="menu-col">
+							<p>$3.50</p>
+							<p>$3.50</p>
+							<p>$3.50</p>
+							<p>$3.50</p>
+							<p>$3.75</p>
+							<p>$3.75</p>
+							<p>$3.75</p>
+							<p>$4.00</p>
+						</div>
+					</div>
 				</div>
-				<div class="food-menu" style="display: none;">
-					<p>Food</p>
+				<div class="tea-menu" style="display: none;">
+					<div class="menu-listing">
+						<div class="menu-col items">
+							<p>Chai Latte</p>
+							<p>Matcha</p>
+							<p>Earl Grey</p>
+							<p>Chamomile</p>
+							<p>Hot Chocolate</p>
+						</div>
+						<div class="menu-col">
+							<p>$2.50</p>
+							<p>$3.50</p>
+							<p>$3.50</p>
+							<p>$3.50</p>
+							<p>$4.00</p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 			<!-- Content Here!!! -->
@@ -88,23 +161,34 @@
 		var coffeeBtn = document.getElementById("coffee-btn");
 		var teaBtn = document.getElementById("tea-btn")
 		var specialsBtn = document.getElementById("specials-btn");
-		var foodBtn = document.getElementById("food-btn");
 
 		var coffeeMenu = document.getElementsByClassName("coffee-menu")[0];
 		var teaMenu = document.getElementsByClassName("tea-menu")[0];
 		var specialsMenu = document.getElementsByClassName("specials-menu")[0];
 		
 		coffeeBtn.addEventListener("click", function() {
+			coffeeBtn.style.backgroundColor = "#76e5bd";
+			teaBtn.style.backgroundColor = "#dd9de5";
+			specialsBtn.style.backgroundColor = "#dd9de5";
+
 			coffeeMenu.style.display = "block";
 			teaMenu.style.display = "none";
 			specialsMenu.style.display = "none";
 		})
 		teaBtn.addEventListener("click", function() {
+			coffeeBtn.style.backgroundColor = "#dd9de5";
+			specialsBtn.style.backgroundColor = "#dd9de5";
+			teaBtn.style.backgroundColor = "#76e5bd";
+
 			coffeeMenu.style.display = "none";
 			teaMenu.style.display = "block";
 			specialsMenu.style.display = "none";
 		})
 		specialsBtn.addEventListener("click", function() {
+			coffeeBtn.style.backgroundColor = "#dd9de5";
+			teaBtn.style.backgroundColor = "#dd9de5";
+			specialsBtn.style.backgroundColor = "#76e5bd";
+
 			coffeeMenu.style.display = "none";
 			teaMenu.style.display = "none";
 			specialsMenu.style.display = "block";

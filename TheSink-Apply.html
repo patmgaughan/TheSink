@@ -15,28 +15,40 @@
 
 			.form-content {
 				border: 2px solid #76e5bd;
-				background-color:#dd9de5;
+				background-color: #dd9de5;
 				width: 70%;
 				margin: 0 auto;
 				color: #ffff00;
 				line-height: 7vh;
-				size: 18px;
+				font-size: 18px;
 			}
 	
 			.order-form {
 				border: 2px solid #76e5bd;
 				text-align: center;
 				padding-top: 10px;
-				height: 35vh;
+				height: 37.5vh;
 			}
 	
 			input, select {
 				margin-bottom: 15px;
-				height: 17.5px;
+				height: 20px;
 			}
 	
 			#submit {
+				font-size: 16px;
+				background-color: #76e5bd;
+				border-style: none;
 				cursor: pointer;
+				height: 40px;
+				width: 100px;
+				transition: 0.2s all ease-in-out;
+				font-family: 'Times New Roman', Times, serif;
+			}
+
+			#submit:hover {
+				background-color: #80FACD;
+				box-shadow: 2px 4px #dd9de5;
 			}
 	
 			label {
@@ -72,7 +84,7 @@
 						<label for="drink">What drink would you like?</label>
 						<input for="drink" name="drink" type="textbox"><br>
 						<label for="milk-types">What type of milk do you want? </label>
-						<select id="milk-types" name="milk-types">
+						<select id="milk-types" name="milktypes">
 							<option value="whole">Whole</option>
 							<option value="skim">Skim</option>
 							<option value="almond">Almond</option>
@@ -90,7 +102,7 @@
 							<option value="8to9">8pm to 9pm</option>
 						</select><br>
 						<label for="submit"></label>
-						<input type="submit" id="submit" name="submit">
+						<input type="submit" id="submit" name="submit" value="Order">
 					</form>
 				</div>
 			</div>
@@ -101,6 +113,16 @@
 			The Sink Coffee Shop at Tufts University
 		</div>
 		<script type="text/javascript">
+			var availableDrinks = ["Latte", "Cappuccino", "Americano", "Mocha", "Cinny Vanilly", "Voldermort", "Hot Karl", "Matcha", "Earl Grey", "Chamomile"];
+			var lowerCaseDrinks = [];
+			for (i = 0; i < availableDrinks.length; i++) {
+					lowerCaseDrinks.push(availableDrinks[i].toLowerCase()); // Account for case senstivity
+			}
+
+			function isValidDrink(drink) {
+				return availableDrinks.includes(drink) || lowerCaseDrinks.includes(drink);
+			}
+
 			function validate() {
 				if (document.order.name.value == "") {
 					alert("You need to fill in your name");
@@ -111,7 +133,14 @@
 					alert("Please tell us what drink you'd like!");
 					return false;
 				}
-				alert("Your order has been submitted. Thanks for ordering with us!");
+
+				if (!isValidDrink(document.order.drink.value)) {
+					alert("We don't have that drink, sorry!");
+					return false;
+				}
+
+				let orderString = "Hi " + document.order.name.value + ", your order of a " + document.order.drink.value + " with " + document.order.milktypes.value.toLowerCase() + " milk has been submitted. Thanks for ordering with us!";
+				alert(orderString);
 				return true;
 			}
 		</script>
