@@ -2,6 +2,24 @@
 <head>
 	<title>Drink Suggestions</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<style>
+	    .form-content {
+		border: 2px solid #76e5bd;
+		background-color: #dd9de5;
+		width: 70%;
+		margin: 0 auto:
+		line-height: 25px;
+		size: 18px;
+	    } 
+	    .drink-form {
+		vertical-align: center;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		width: 70%;
+		border: 2px solid #76e5bd;
+		text-align: center;
+		padding-top: 10px;
+	</style>
 </head>
 <body>
 	<header>
@@ -17,7 +35,6 @@
 		<div class="content">
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
 					<li><a href="TheSink-Menu.html">Menu</a></li>
 					<li><a href="TheSink-Apply.html">Order</a></li>
 					<li><a href="TheSink-Hours.html">Hours/Location</a></li>
@@ -28,7 +45,28 @@
 				</ul>
 			</nav>
 			<h1>Drink Suggestions</h1>
-			<!-- Conter Here!!! -->
+			<div class="form-content">
+				<form class="drink-form">
+					<label for="title">Title: </label>
+					<input id="title"><br>
+			
+					<label for="drink">What is the recipe?</label>
+					<input for="drink" type="textbox"><br>
+					
+					<label for="why">Why should we add this drink to our repertoire?</label>
+					<input for="why" type="textbox"><br>
+		
+					<label for="temp">What temperature do you recommend? </label>
+					<select id="temp" name="temp">
+						<option value="either">Either</option>
+						<option value="hot">Hot</option>
+						<option value="iced">Iced</option>
+					</select><br>
+			</div>
+			<div>			
+					<label for="submit"></label>
+					<input type="submit" id="submit" name="submit">
+			</div>
 			<div class="panels">
 				<!-- two columns - one is an image, one is a form nicely styled -->
 
@@ -39,7 +77,9 @@
 
 
 
-			<!-- Content Here!!! -->
+
+				</form>
+			</div>				
 		</div>
 		<div class="side">
 		</div>
