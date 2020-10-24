@@ -80,6 +80,12 @@ li a {
 	color: #ff0;
 }
 
+li:hover {
+	background-color: #76e5bd;
+	border: 2px solid #ff0;
+	color: #76e5bd;
+}
+
 a{
 	text-decoration: none;
 	color: #fff;
