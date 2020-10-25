@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>The Sink</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
 	<style>
 
@@ -83,20 +84,69 @@
 			padding: 5px 15px;
 			width: 50%;
 		}
+		.section-desc h2 {
+			font-size: 36px;
+		}
+		.middle-about p {
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 1050px) {
+			.middle img {
+				width: 300px;
+			}
+		}
+
+		@media only screen and (max-width: 850px) {
+			.middle img {
+				width: 200px;
+				margin-top: 80px;
+			}
+			.list-left, .list-right {
+				width: 25%;
+				font-size: 14px;
+			}
+			.section-desc h2 {
+				font-size: 28px;
+			}
+			.middle-about p {
+				font-size: 16px;
+			}
+			.section-image img {
+				width: 300px;
+				margin-top: 30%;
+			}
+		}
+		@media only screen and (max-width: 650px) {
+			.middle img {
+				width: 180px;
+				margin-top: 100px;
+				margin-right: 20px;
+			}
+			.list-left, .list-right {
+				width: 25%;
+				font-size: 14px;
+				word-wrap:break-word;
+			}
+			.section-image img {
+				width: 200px;
+				
+			}
+		}
 	</style>
 </head>
 <body>
 	<header></header>
 
-	<section class="section" style="height: 95vh;">
-		<div class="side" style="height: 800px">
+	<section class="section">
+		<div class="side">
 		</div>
 		<div class="content">
 			<div class="list-left list">
 				<ul>
 					<li><a href="TheSink-Menu.html">Menu</a></li>
 					<li><a href="TheSink-Apply.html">Order</a></li>
-					<li><a href="TheSink-Hours.html">Hours/Location</a></li>
+					<li><a href="TheSink-Hours.html">Hours / Location</a></li>
 				</ul>
 			</div>
 
@@ -112,7 +162,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="side" style="height: 800px">
+		<div class="side">
 		</div>
 	</section>
 	<section class="about-us section">
@@ -124,8 +174,8 @@
 			</div>
 			<div class="section-desc" style="position: relative; background-color: #212F3D;">
 				<div style="position: absolute; top: 30%; width: 80%; margin-left: 10%; color:#F7DC6F">
-					<h2 style="font-size: 40px;">Welcome to The Sink!</h2>
-					<p style="font-size: 18px;"> The only student-run coffee shop at Tufts University, The Sink is committed to providing you with the best coffee at student-friendly prices, with the warmest service!</p>
+					<h2>Welcome to The Sink!</h2>
+					<p> The only student-run coffee shop at Tufts University, The Sink is committed to providing you with the best coffee at student-friendly prices, with the warmest service!</p>
 				</div>
 			</div>
 		</div>
@@ -137,14 +187,14 @@
 		</div>
 		<div class="middle-about" style="display:flex; text-align: center; color:#e45ae8;">
 			<div class="section-desc" style="position: relative; ">
-				<div style="position: absolute; top: 40%; width: 80%; margin-left: 7%">
-					<h2 style="font-size: 28px;">Whatever you want, whenever you want it!</h2>
-					<p style="font-size: 18px; margin-bottom: 25px;">A huge array of drinks awaits you - classic coffee and tea drinks, as well as our specially hand-crafted in-house specials!</p>
-					<a id="menu-redirect" style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px; margin-top:" href="TheSink-Menu.html">Check out our menu!</a>
+				<div style="position: absolute; top: 35%; width: 80%; margin-left: 4%">
+					<h2>Whatever you want, whenever you want it!</h2>
+					<p style="margin-bottom: 25px;">A huge array of drinks awaits you - classic coffee and tea drinks, as well as our specially hand-crafted in-house specials!</p>
+					<a id="menu-redirect" style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px; margin-top:" href="TheSink-Menu.html">Our menu!</a>
 				</div>
 			</div>
 			<div class="section-image" style="padding-top: 4%; background-color: #76e5bd;">
-				<img src="coffee.jpg" alt="cup of coffee" width="400">
+				<img src="coffee2.jpg" alt="3 cups of coffee" width="400">
 			</div>
 		</div>
 		<div class="side">
@@ -155,12 +205,12 @@
 		</div>
 		<div class="middle-about" style="display:flex; color:#76e5bd;">
 			<div class="section-image" style="padding-top: 4%; background-color: #e45ae8; text-align: center;">
-				<img src="coffee.jpg" alt="cup of coffee" width="400">
+				<img src="barista.jpg" alt="a barista" width="400">
 			</div>
 			<div class="section-desc" style="position: relative; background-color: #212F3D;">
 				<div style="position: absolute; top: 35%; width: 80%; margin-left: 10%;">
-					<h2 style="font-size: 30px;">And what is The Sink without its people?</h2>
-					<p style="font-size: 18px;">We here at The Sink pride ourselves on the warm, loving community that we create amongst our staff and our customers. Come get to know some of the lovely <a style="font-size: 24px;" href="TheSink-MeetTheTeam.html">Sinksters</a> that make this place so special!</p>
+					<h2>And what is The Sink without its people?</h2>
+					<p>We here at The Sink pride ourselves on the warm, loving community that we create amongst our staff and our customers. Come get to know some of the lovely <a style="font-size: 24px;" href="TheSink-MeetTheTeam.html">Sinksters</a> that make this place so special!</p>
 				</div>
 			</div>
 		</div>
@@ -172,14 +222,14 @@
 		</div>
 		<div class="middle-about" style="display:flex; text-align: center;">
 			<div class="section-desc" style="position: relative;">
-				<div style="position: absolute; top: 40%; width: 80%; margin-left: 7%">
-					<h2 style="font-size: 30px;">Got an idea for us?</h2>
-					<p style="font-size: 18px; margin-bottom: 25px;">Let us know what drink you'd like to see on our menu next!</p>
-					<a style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px;" href="TheSink-Drink.html">Give us your recs!</a>
+				<div style="position: absolute; top: 40%; width: 80%; margin-left: 4%">
+					<h2>Got an idea for us?</h2>
+					<p style="margin-bottom: 25px;">Let us know what drink you'd like to see on our menu next!</p>
+					<a style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px;" href="TheSink-Drink.html">Tell us!</a>
 				</div>
 			</div>
 			<div class="section-image" style="padding-top: 4%; background-color: #76e5bd;">
-				<img src="coffee.jpg" alt="cup of coffee" width="400">
+				<img src="drinkcoffee.jpg" alt="woman drinking coffee" width="400">
 			</div>
 		</div>
 		<div class="side">
