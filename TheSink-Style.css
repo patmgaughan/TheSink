@@ -109,6 +109,12 @@ a{
 	background-color: #76e5bd;
 }
 
+@media screen and (max-width: 1100px) {
+	nav {
+	  margin-top: 170px;
+	}
+  }
+
 /*
 dark pink #e45ae8
 light pink #dd9de5
