@@ -3,6 +3,9 @@
 	<title>Menu</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
 	<style>
+		.content {
+			height: 100vh;
+		}
 		.button-menu {
 			display: flex;
 			margin: 0 auto;
@@ -17,23 +20,36 @@
 			font-size: 1em;
 			cursor: pointer;
 		}
-		.button-menu input:hover {
-			background-color: #76e5bd;
-		}
-		.button-menu input:focus {
-			border-style: none;
-		}
 		.content-container {
 			width: 80%;
 			margin: 0 auto;
 			margin-top: 10px;	
+			min-height: 50vh;
 		}
+		.menu-desc {
+			max-height: 15vh;
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.menu-desc p {
+			color: #76e5bd;
+			line-height: 24px;
+			font-size: 17px;
+		}
+
 		.menu-listing {
 			width: 82.5%;
 			margin: 0 auto;
 			margin-top: 20px;
-			border: 2px solid #dd9de5;
+			border: 2px solid #76e5bd;
+			background-color: #dd9de5;
 			font-size: 18px;
+		}
+		.menu-listing p {
+			font-weight: 500;
+			color: #ffff00;
 		}
 		.menu-listing:after {
 			content: "";
@@ -50,6 +66,13 @@
 		.items {
 			text-align: left;
 			padding-left: 10%;
+		}
+		.menu-section {
+			margin-bottom: 50px;
+			overflow-y: scroll;
+		}
+		input:hover {
+			background-color: #76e5bd;
 		}
 	</style>
 </head>
@@ -76,78 +99,83 @@
 			</nav>
 			<h1>Menu</h1>
 			<!-- Content Here!!! -->
-			<div class="button-menu">
-				<input id="coffee-btn" type="button" value="Coffee">
-				<input id="specials-btn" type="button" value="Sink Specials">
-				<input id="tea-btn" type="button" value="Tea">
-			</div>
-			<div class="content-container">
-				<div class="coffee-menu" style="display: none;">
-					<div class="menu-listing">
-						<div class="menu-col items">
-							<p>Drip Coffee</p>
-							<p>Cold Brew</p>
-							<p>Cappucino</p>
-							<p>Latte</p>
-							<p>Mocha</p>
-							<p>Americano</p>
-						</div>
-						<div class="menu-col">
-							<p>$2.00</p>
-							<p>$3.00</p>
-							<p>$3.50</p>
-							<p>$3.75</p>
-							<p>$3.75</p>
-							<p>$2.50</p>
-						</div>
-						
-					</div>
+			<section>
+				<div class="menu-desc">
+					<p>Whether you're feeling like a classic latte, or in need of the rush of a Voldemort, we've got you covered!<br>Click on whichever category of drink you want below and pick what suits your fancy :)</p>
 				</div>
-				<div class="specials-menu" style="display: none;">
-					<div class="menu-listing">
-						<div class="menu-col items">
-							<p>Hot Karl</p>
-							<p>Cinny Vanilly</p>
-							<p>Volermort</p>
-							<p>Lucy in the Chai</p>
-							<p>Cloud Nine</p>
-							<p>Soylent Green</p>
-							<p>Beesting</p>
-							<p>Medford Fog</p>
-						</div>
-						<div class="menu-col">
-							<p>$3.50</p>
-							<p>$3.50</p>
-							<p>$3.50</p>
-							<p>$3.50</p>
-							<p>$3.75</p>
-							<p>$3.75</p>
-							<p>$3.75</p>
-							<p>$4.00</p>
+			</section>
+			<section class="menu-section">
+				<div class="button-menu">
+					<input id="coffee-btn" type="button" value="Coffee">
+					<input id="specials-btn" type="button" value="Sink Specials">
+					<input id="tea-btn" type="button" value="Tea">
+				</div>
+				<div class="content-container">
+					<div class="coffee-menu" style="display: none;">
+						<div class="menu-listing">
+							<div class="menu-col items">
+								<p>Drip Coffee</p>
+								<p>Cold Brew</p>
+								<p>Cappucino</p>
+								<p>Latte</p>
+								<p>Mocha</p>
+								<p>Americano</p>
+							</div>
+							<div class="menu-col">
+								<p>$2.00</p>
+								<p>$3.00</p>
+								<p>$3.50</p>
+								<p>$3.75</p>
+								<p>$3.75</p>
+								<p>$2.50</p>
+							</div>
+							
 						</div>
 					</div>
-				</div>
-				<div class="tea-menu" style="display: none;">
-					<div class="menu-listing">
-						<div class="menu-col items">
-							<p>Chai Latte</p>
-							<p>Matcha</p>
-							<p>Earl Grey</p>
-							<p>Chamomile</p>
-							<p>Hot Chocolate</p>
-						</div>
-						<div class="menu-col">
-							<p>$2.50</p>
-							<p>$3.50</p>
-							<p>$3.50</p>
-							<p>$3.50</p>
-							<p>$4.00</p>
+					<div class="specials-menu" style="display: none;">
+						<div class="menu-listing">
+							<div class="menu-col items">
+								<p>Hot Karl</p>
+								<p>Cinny Vanilly</p>
+								<p>Voldermort</p>
+								<p>Lucy in the Chai</p>
+								<p>Cloud Nine</p>
+								<p>Soylent Green</p>
+								<p>Beesting</p>
+								<p>Medford Fog</p>
+							</div>
+							<div class="menu-col">
+								<p>$3.50</p>
+								<p>$3.50</p>
+								<p>$3.50</p>
+								<p>$3.50</p>
+								<p>$3.75</p>
+								<p>$3.75</p>
+								<p>$3.75</p>
+								<p>$4.00</p>
+							</div>
 						</div>
 					</div>
-					
+					<div class="tea-menu" style="display: none;">
+						<div class="menu-listing">
+							<div class="menu-col items">
+								<p>Chai Latte</p>
+								<p>Matcha</p>
+								<p>Earl Grey</p>
+								<p>Chamomile</p>
+								<p>Hot Chocolate</p>
+							</div>
+							<div class="menu-col">
+								<p>$2.50</p>
+								<p>$3.50</p>
+								<p>$3.50</p>
+								<p>$3.50</p>
+								<p>$4.00</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<!-- Content Here!!! -->
+			</section>
 		</div>
 		<div class="side">
 		</div>

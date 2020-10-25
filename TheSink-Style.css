@@ -18,7 +18,7 @@ aside {
 	padding: 5px;
 	box-shadow: -8px 8px #e45ae8;
 	font-size: 150%;
-}
+} 
 
 img {
 	display: inline-block;
@@ -80,6 +80,12 @@ li a {
 	color: #ff0;
 }
 
+li:hover {
+	background-color: #76e5bd;
+	border: 2px solid #ff0;
+	color: #76e5bd;
+}
+
 a{
 	text-decoration: none;
 	color: #fff;
@@ -99,6 +105,7 @@ a{
 .side {
 	width: 2%;
 	padding: 5px;
+	height: 700px;
 	background-color: #76e5bd;
 }
 
@@ -108,4 +115,5 @@ light pink #dd9de5
 cyan #509ec4
 turoquoise #76e5bd
 orange #eda23e
+yellow #ff0
 */

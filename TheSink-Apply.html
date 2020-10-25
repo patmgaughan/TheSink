@@ -114,7 +114,10 @@
 			The Sink Coffee Shop at Tufts University
 		</div>
 		<script type="text/javascript">
-			var availableDrinks = ["Latte", "Cappuccino", "Americano", "Mocha", "Cinny Vanilly", "Voldermort", "Hot Karl", "Matcha", "Earl Grey", "Chamomile"];
+			var availableDrinks = ["Latte", "Cappuccino", "Americano", "Mocha", "Drip Coffee", 
+							"Cold Brew", "Cinny Vanilly", "Voldermort", "Hot Karl", "Lucy in the Chai", 
+							"Cloud Nine", "Soylent Green", "Beesting", "Medford Fog", "Matcha", "Earl Grey", 
+							"Chamomile", "Hot Chocolate", "Chai Latte"];
 			var lowerCaseDrinks = [];
 			for (i = 0; i < availableDrinks.length; i++) {
 					lowerCaseDrinks.push(availableDrinks[i].toLowerCase()); // Account for case senstivity
@@ -126,7 +129,7 @@
 
 			function validate() {
 				if (document.order.name.value == "") {
-					alert("You need to fill in your name");
+					alert("You need to fill in your name. Let us know how to address you!");
 					return false;
 				}
 

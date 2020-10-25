@@ -55,13 +55,7 @@
 		body {
 			background-color: #222;
 		}
-		.side {
-			background-color: #76e5bd;
-		}
-		.footer {
-			background-color: #76e5bd;
-		}
-		header {
+		.side, .footer, header {
 			background-color: #76e5bd;
 		}
 		.content {
@@ -74,18 +68,30 @@
 			position: relative;
 			color: #eee;
 			text-align: center;
+			padding-top: 6%;
+		}
+		.middle-about {
+			width: 94%;
+			margin: 0 auto;
+			padding: 5px;
+		}
+		section {
+			min-height: 40vh;
+			display: block;
+		}
+		.section-image, .section-desc {
+			padding: 5px 15px;
+			width: 50%;
 		}
 	</style>
 </head>
 <body>
 	<header></header>
 
-	<section class="section">
-		<div class="side">
+	<section class="section" style="height: 95vh;">
+		<div class="side" style="height: 800px">
 		</div>
 		<div class="content">
-			<!-- Conter Here!!! -->
-
 			<div class="list-left list">
 				<ul>
 					<li><a href="TheSink-Menu.html">Menu</a></li>
@@ -103,17 +109,82 @@
 					<li><a href="TheSink-MeetTheTeam.html">Meet the Team</a></li>
 					<li><a href="TheSink-History.html">history</a></li>
 					<li><a href="TheSink-Drink.html">Drink Suggestions</a></li>
-
 				</ul>
 			</div>
-
-
-			<!-- Content Here!!! -->
+		</div>
+		<div class="side" style="height: 800px">
+		</div>
+	</section>
+	<section class="about-us section">
+		<div class="side">
+		</div>
+		<div class="middle-about" style="display:flex;">
+			<div class="section-image" style="padding-top: 4%; background-color: #e45ae8; text-align: center;">
+				<img src="coffee.jpg" alt="cup of coffee" width="400">
+			</div>
+			<div class="section-desc" style="position: relative; background-color: #212F3D;">
+				<div style="position: absolute; top: 30%; width: 80%; margin-left: 10%; color:#F7DC6F">
+					<h2 style="font-size: 40px;">Welcome to The Sink!</h2>
+					<p style="font-size: 18px;"> The only student-run coffee shop at Tufts University, The Sink is committed to providing you with the best coffee at student-friendly prices, with the warmest service!</p>
+				</div>
+			</div>
 		</div>
 		<div class="side">
 		</div>
 	</section>
-
+	<section class="menu-section section">
+		<div class="side">
+		</div>
+		<div class="middle-about" style="display:flex; text-align: center; color:#e45ae8;">
+			<div class="section-desc" style="position: relative; ">
+				<div style="position: absolute; top: 40%; width: 80%; margin-left: 7%">
+					<h2 style="font-size: 28px;">Whatever you want, whenever you want it!</h2>
+					<p style="font-size: 18px; margin-bottom: 25px;">A huge array of drinks awaits you - classic coffee and tea drinks, as well as our specially hand-crafted in-house specials!</p>
+					<a id="menu-redirect" style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px; margin-top:" href="TheSink-Menu.html">Check out our menu!</a>
+				</div>
+			</div>
+			<div class="section-image" style="padding-top: 4%; background-color: #76e5bd;">
+				<img src="coffee.jpg" alt="cup of coffee" width="400">
+			</div>
+		</div>
+		<div class="side">
+		</div>
+	</section>
+	<section class="people section">
+		<div class="side">
+		</div>
+		<div class="middle-about" style="display:flex; color:#76e5bd;">
+			<div class="section-image" style="padding-top: 4%; background-color: #e45ae8; text-align: center;">
+				<img src="coffee.jpg" alt="cup of coffee" width="400">
+			</div>
+			<div class="section-desc" style="position: relative; background-color: #212F3D;">
+				<div style="position: absolute; top: 35%; width: 80%; margin-left: 10%;">
+					<h2 style="font-size: 30px;">And what is The Sink without its people?</h2>
+					<p style="font-size: 18px;">We here at The Sink pride ourselves on the warm, loving community that we create amongst our staff and our customers. Come get to know some of the lovely <a style="font-size: 24px;" href="TheSink-MeetTheTeam.html">Sinksters</a> that make this place so special!</p>
+				</div>
+			</div>
+		</div>
+		<div class="side">
+		</div>
+	</section>
+	<section class="suggestion section">
+		<div class="side">
+		</div>
+		<div class="middle-about" style="display:flex; text-align: center;">
+			<div class="section-desc" style="position: relative;">
+				<div style="position: absolute; top: 40%; width: 80%; margin-left: 7%">
+					<h2 style="font-size: 30px;">Got an idea for us?</h2>
+					<p style="font-size: 18px; margin-bottom: 25px;">Let us know what drink you'd like to see on our menu next!</p>
+					<a style="border: 2px solid #76e5bd; background-color: #e45ae8; padding: 7px 10px;" href="TheSink-Drink.html">Give us your recs!</a>
+				</div>
+			</div>
+			<div class="section-image" style="padding-top: 4%; background-color: #76e5bd;">
+				<img src="coffee.jpg" alt="cup of coffee" width="400">
+			</div>
+		</div>
+		<div class="side">
+		</div>
+	</section>
 	<div class="footer">
 		The Sink Coffee Shop, Tufts University
 	</div>
