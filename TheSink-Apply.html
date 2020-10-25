@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Order Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
 		<style>
 			.order-description {
@@ -19,12 +20,11 @@
 				width: 70%;
 				margin: 0 auto;
 				color: #ffff00;
-				line-height: 7vh;
+				line-height: 5vh;
 				font-size: 18px;
 			}
 	
 			.order-form {
-				border: 2px solid #76e5bd;
 				text-align: center;
 				padding-top: 10px;
 				height: 37.5vh;
@@ -54,6 +54,31 @@
 			label {
 				margin-right: 10px;
 			}
+
+			@media only screen and (max-width: 1050px) {
+				.form-content {
+					padding-bottom: -5px;
+					font-size: 16px;
+				}
+				#submit {
+					width: 90px;
+				}
+			}
+
+			@media only screen and (max-width: 500px) {
+				.order-description {
+					font-size: 16px;
+				}
+				.form-content {
+					min-height: 25vh;
+					padding: 2px 10px;
+				}
+
+				.side {
+					height: 100vh;;
+				}
+			}
+
 		</style>
 	</head>
 	<body>
@@ -77,7 +102,7 @@
 					</ul>
 				</nav>
 				<h1>Order</h1>
-				<p class="order-description">Yes, we do online orders now - simply <u><a href="TheSink-Menu.html" target="_blank">choose your drink</a></u> and tell us when you wanna pick it up!<br>Payment can be done in person or through Venmo.</p>
+				<p class="order-description">Yes, we do online orders now - simply <u><a href="TheSink-Menu.html" target="_blank">choose your drink</a></u> and when you want to pick it up!<br>Payment can be done in person or through Venmo.</p>
 				<div class="form-content">
 					<form class="order-form" name="order" onsubmit="return validate()">
 						<label for="name">Name: </label>
