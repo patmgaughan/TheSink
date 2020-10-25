@@ -2,31 +2,86 @@
 <head>
 	<title>Drink Suggestions</title>
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+
 	<style>
-	    .form-content {
-		border: 2px solid #76e5bd;
-		background-color: #dd9de5;
-		width: 70%;
-		margin: 0 auto:
-		line-height: 25px;
-		size: 18px;
-	    } 
-	    .drink-form {
-		vertical-align: center;
-		margin-left: 0 auto;
-		margin-right: 0 auto;
-		width: 70%;
-		border: 2px solid #76e5bd;
-		text-align: center;
-		padding-top: 10px;
+		.form-content {
+			border: 2px solid #76e5bd;
+			background-color: #dd9de5;
+			width: 70%;
+			margin: 0 auto:
+			line-height: 25px;
+			size: 18px;
+		} 
+
+		.drink-form {
+			vertical-align: center;
+			margin-left: 0 auto;
+			margin-right: 0 auto;
+			/*width: 70%;*/
+			border: 2px solid #76e5bd;
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		/*.order-description {
+			font-size: 17px;
+			text-align: center;
+			color: #76e5bd;
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}*/
+
+		.form-content {
+			border: 2px solid #76e5bd;
+			background-color: #dd9de5;
+			width: 70%;
+			margin: 0 auto;
+			color: #ffff00;
+			line-height: 7vh;
+			font-size: 18px;
+		}
+
+		/*.order-form {
+			border: 2px solid #76e5bd;
+			text-align: center;
+			padding-top: 10px;
+			height: 37.5vh;
+		}*/
+
+		input, select {
+			margin-bottom: 15px;
+			height: 20px;
+		}
+
+		#submit {
+			font-size: 16px;
+			background-color: #76e5bd;
+			border-style: none;
+			cursor: pointer;
+			height: 40px;
+			width: 100px;
+			transition: 0.2s all ease-in-out;
+			font-family: 'Times New Roman', Times, serif;
+		}
+
+		#submit:hover {
+			background-color: #80FACD;
+			box-shadow: 2px 4px #dd9de5;
+		}
+
+		label {
+			margin-right: 10px;
+		}
 	</style>
 </head>
+
 <body>
 	<header>
 	</header>
 
 	<div class="logo">
-			<a href="index.html"><img src="sinkLogo.PNG" alt="The Sink" width="200"></a>
+		<a href="index.html"><img src="sinkLogo.PNG" alt="The Sink" width="200"></a>
 	</div>
 
 	<section class="section">
@@ -45,48 +100,54 @@
 				</ul>
 			</nav>
 			<h1>Drink Suggestions</h1>
+
+
 			<div class="form-content">
 				<form class="drink-form">
 					<label for="title">Title: </label>
 					<input id="title"><br>
-			
+
 					<label for="drink">What is the recipe?</label>
 					<input for="drink" type="textbox"><br>
-					
+
 					<label for="why">Why should we add this drink to our repertoire?</label>
 					<input for="why" type="textbox"><br>
-		
+
 					<label for="temp">What temperature do you recommend? </label>
 					<select id="temp" name="temp">
 						<option value="either">Either</option>
 						<option value="hot">Hot</option>
 						<option value="iced">Iced</option>
 					</select><br>
-			</div>
-			<div>			
+
+					<div>			
+						<label for="submit"></label>
+						<input type="submit" id="submit" name="submit">
+					</div>
+				<!-- </div> -->
+			<!-- <div>			
 					<label for="submit"></label>
 					<input type="submit" id="submit" name="submit">
-			</div>
-			<div class="panels">
-				<!-- two columns - one is an image, one is a form nicely styled -->
+				</div> -->
+			<!-- <div class="panels">
+				two columns - one is an image, one is a form nicely styled
 
 
 
 
-			</div>
-
-
-
+			</div> -->
 
 				</form>
-			</div>				
+		</div>
+
+
 		</div>
 		<div class="side">
-		</div>
+<!-- </div> -->
 	</section>
 
 	<div class="footer">
 		The Sink Coffee Shop at Tufts University
 	</div>
-	
+
 </body>
