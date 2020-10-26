@@ -3,6 +3,7 @@
 	<title>Menu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<style>
 		.content {
 			height: 100vh;
@@ -198,32 +199,34 @@
 		var teaMenu = document.getElementsByClassName("tea-menu")[0];
 		var specialsMenu = document.getElementsByClassName("specials-menu")[0];
 		
-		coffeeBtn.addEventListener("click", function() {
-			coffeeBtn.style.backgroundColor = "#76e5bd";
-			teaBtn.style.backgroundColor = "#dd9de5";
-			specialsBtn.style.backgroundColor = "#dd9de5";
+		$("#coffee-btn").click(function() {
+			$(".coffee-menu").fadeIn();
+			$(".tea-menu").css("display", "none");
+			$(".specials-menu").css("display", "none");
 
-			coffeeMenu.style.display = "block";
-			teaMenu.style.display = "none";
-			specialsMenu.style.display = "none";
+			$("#coffee-btn").css("background-color", "#76e5bd")
+			$("#tea-btn").css("background-color", "#dd9de5")
+			$("#specials-btn").css("background-color", "#dd9de5")
 		})
-		teaBtn.addEventListener("click", function() {
-			coffeeBtn.style.backgroundColor = "#dd9de5";
-			specialsBtn.style.backgroundColor = "#dd9de5";
-			teaBtn.style.backgroundColor = "#76e5bd";
+		
+		$("#tea-btn").click(function() {
+			$(".tea-menu").fadeIn();
+			$(".coffee-menu").css("display", "none");
+			$(".specials-menu").css("display", "none");
 
-			coffeeMenu.style.display = "none";
-			teaMenu.style.display = "block";
-			specialsMenu.style.display = "none";
+			$("#coffee-btn").css("background-color", "#dd9de5")
+			$("#tea-btn").css("background-color", "#76e5bd")
+			$("#specials-btn").css("background-color", "#dd9de5")
 		})
-		specialsBtn.addEventListener("click", function() {
-			coffeeBtn.style.backgroundColor = "#dd9de5";
-			teaBtn.style.backgroundColor = "#dd9de5";
-			specialsBtn.style.backgroundColor = "#76e5bd";
 
-			coffeeMenu.style.display = "none";
-			teaMenu.style.display = "none";
-			specialsMenu.style.display = "block";
+		$("#specials-btn").click(function() {
+			$(".specials-menu").fadeIn();
+			$(".coffee-menu").css("display", "none");
+			$(".tea-menu").css("display", "none");
+
+			$("#coffee-btn").css("background-color", "#dd9de5")
+			$("#tea-btn").css("background-color", "#dd9de5")
+			$("#specials-btn").css("background-color", "#76e5bd")			
 		})
 	</script>
 	
