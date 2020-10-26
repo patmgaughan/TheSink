@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <head>
 	<title>Drink Suggestions</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="TheSink-Style.css">
 
 	<style>
-		.form-content {
-			border: 2px solid #76e5bd;
-			background-color: #dd9de5;
-			width: 70%;
-			margin: 0 auto:
-			line-height: 25px;
-			size: 18px;
-		} 
-
 		.drink-form {
 			vertical-align: center;
 			margin-left: 0 auto;
 			margin-right: 0 auto;
 			/*width: 70%;*/
-			border: 2px solid #76e5bd;
-			text-align: center;
+
+			text-align: left;
 			padding-top: 10px;
 		}
-
-		/*.order-description {
-			font-size: 17px;
-			text-align: center;
-			color: #76e5bd;
+		.row {
+			display: flex;
 			width: 70%;
 			margin: 0 auto;
-			margin-bottom: 15px;
-		}*/
+			margin-bottom: 40px;
+		}
+
+		.form-col {
+			width: 50%;
+		}
+
+		.form-col img {
+			width: 100%;
+		}
 
 		.form-content {
+			box-sizing: border-box;
 			border: 2px solid #76e5bd;
 			background-color: #dd9de5;
-			width: 70%;
 			margin: 0 auto;
 			color: #ffff00;
 			line-height: 7vh;
 			font-size: 18px;
+			padding: 0 5%;
+			padding-top: 10%;
+			overflow-y: scroll;
 		} 
 
-		/*.order-form {
-			border: 2px solid #76e5bd;
-			text-align: center;
-			padding-top: 10px;
-			height: 37.5vh;
-		}*/
-
 		input, select {
-			margin-bottom: 15px;
 			height: 20px;
 		}
 
@@ -71,9 +63,59 @@
 			box-shadow: 2px 4px #dd9de5;
 		}
 
-		label {
-			margin-right: 10px;
+		.submit-container {
+			margin: 0 auto;
+			text-align: center;
 		}
+
+		@media only screen and (max-width: 1300px) { 
+			.form-content {
+				font-size: 17px;
+			}	
+			input {
+				width: 85px;
+				margin-left: 15px;
+			}
+		}
+
+		@media only screen and (max-width: 1150px) { 
+			.row {
+				max-height: 60vh;
+				margin-bottom: 50px;
+			}
+			.form-content {
+				font-size: 16px;
+				overflow-y: scroll;
+			}	
+			.form-col img {
+				max-height: 60vh;
+			}
+			input {
+				width: 75px;
+				margin-left: 15px;
+			}
+		}
+
+		@media only screen and (max-width: 900px) { 
+			.form-content {
+				font-size: 15px;
+				padding-top: 5%;
+				max-height: 45vh;
+			}	
+			.form-col img {
+				max-height: 45vh;
+			}
+			input {
+				width: 70px;
+				margin-left: 10px;
+			}
+			#submit {
+				font-size: 15px;
+				width: 80px;
+				height: 34px;
+			}
+		}
+
 	</style>
 </head>
 
@@ -101,40 +143,44 @@
 				</ul>
 			</nav>
 			<h1>Drink Suggestions</h1>
-
-
-			<div class="form-content">
-				<form class="drink-form">
-					<label for="title">Title: </label>
-					<input id="title" required><br>
-
-					<label for="drink">What is the recipe?</label>
-					<input for="drink" required type="textbox"><br>
-
-					<label for="why">Why should we add this drink to our repertoire?</label>
-					<input for="why" type="textbox"><br>
-
-					<label for="temp">What temperature do you recommend? </label>
-					<select id="temp" name="temp">
-						<option value="either">Either</option>
-						<option value="hot">Hot</option>
-						<option value="iced">Iced</option>
-					</select><br>
-
-					<div>			
-						<label for="submit"></label>
-						<input type="submit" id="submit" name="submit">
-					</div>
-				<!-- </div> -->
-			<!-- <div>			
-					<label for="submit"></label>
-					<input type="submit" id="submit" name="submit">
-				</div> -->
-			<!-- <div class="panels">
-				two columns - one is an image, one is a form nicely styled
-			</div> -->
-
-				</form>
+			<h2 style="text-align: center; color: #76e5bd;">We want to hear from you!</h2>
+			<div class="row">
+				<div class="form-col">
+					<img src="pouring.jpg">
+				</div>
+				<div class="form-col form-content">
+					<form class="drink-form">
+						<div class="drink-form-qn">
+							<label for="name">Name of Drink: </label>
+							<input id="name" name="name" required>
+						</div>
+						<div class="drink-form-qn">
+							<label for="drink">What's in the recipe? </label>
+							<input for="drink" name="drink" required type="textbox">
+						</div>
+						<div class="drink-form-qn">
+							<label for="why">Why should we have this? </label>
+							<input for="why" name="why" type="textbox">
+						</div>
+						<div class="drink-form-qn"> 
+							<label for="why">Why should we have this? </label>
+							<input for="why" name="why" type="textbox">
+						</div>
+						<div class="drink-form-qn">
+							<label for="temp">What temperature do you recommend? </label>
+							<select id="temp" name="temp">
+								<option value="either">Either</option>
+								<option value="hot">Hot</option>
+								<option value="iced">Iced</option>
+							</select>
+						</div>
+						<div class="submit-container"> 			
+							<label for="submit"></label>
+							<input type="submit" id="submit" name="submit">
+						</div>
+					</form>
+				</div>
+				
 		</div>
 
 
